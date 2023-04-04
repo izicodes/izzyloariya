@@ -23,15 +23,46 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------------------------- //
 
   // This is for the scrolling from hero page to the first heading!
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector(".scroll-container"),
-    smooth: true,
-  });
 
-  const scrollIcon = document.querySelector(".fa-solid.fa-angles-down");
-  const targetSection = document.querySelector("#new-section");
+  const button = document.querySelector(".fa-angles-down");
 
-  scrollIcon.addEventListener("click", () => {
-    scroll.scrollTo(targetSection);
-  });
+  //   button.addEventListener("click", () => {
+  //     const target = button.dataset.target;
+  //     const element = document.querySelector(target);
+  //     const offset = element.getBoundingClientRect().top + window.pageYOffset;
+
+  //     button.classList.add("active");
+  //     window.scrollTo({
+  //       top: offset,
+  //       behavior: "smooth",
+  //     });
+
+  //     setTimeout(() => {
+  //       button.classList.remove("active");
+  //     }, 2000);
+  //   });
+
+  // ----------------------------------------- //
+
+  function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = event.currentTarget.dataset.target;
+    const targetPosition = document.querySelector(targetId).offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 700;
+    let start = null;
+
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const progressPercentage = Math.min(progress / duration, 1);
+      window.scrollTo(0, startPosition + distance * progressPercentage);
+      if (progress < duration) window.requestAnimationFrame(step);
+    }
+
+    window.requestAnimationFrame(step);
+  }
+
+  button.addEventListener("click", smoothScroll);
 });

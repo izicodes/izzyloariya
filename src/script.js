@@ -24,26 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // This is for the scrolling from hero page to the first heading!
 
-  const button = document.querySelector(".fa-angles-down");
-
-  //   button.addEventListener("click", () => {
-  //     const target = button.dataset.target;
-  //     const element = document.querySelector(target);
-  //     const offset = element.getBoundingClientRect().top + window.pageYOffset;
-
-  //     button.classList.add("active");
-  //     window.scrollTo({
-  //       top: offset,
-  //       behavior: "smooth",
-  //     });
-
-  //     setTimeout(() => {
-  //       button.classList.remove("active");
-  //     }, 2000);
-  //   });
-
-  // ----------------------------------------- //
-
   function smoothScroll(event) {
     event.preventDefault();
     const targetId = event.currentTarget.dataset.target;
@@ -64,5 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.requestAnimationFrame(step);
   }
 
+  const button = document.querySelector(".fa-angles-down");
   button.addEventListener("click", smoothScroll);
 });

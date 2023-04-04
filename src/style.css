@@ -7,11 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ALL HOVER  */
-.fa-angles-down:hover {
-  cursor: url(https://cur.cursors-4u.net/cursors/cur-5/cur409.cur), auto !important;
-}
-
 #emojiMe {
   width: 120px;
   margin-bottom: 20px;
@@ -68,8 +63,9 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.fa-angles-down .fa-angles-down:hover {
-  transform: translateY(10px);
+.fa-angles-down:hover {
+  transform: translateY(10px) !important;
+  cursor: pointer;
 }
 
 .navbar-end > a {

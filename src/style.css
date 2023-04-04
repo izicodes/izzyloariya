@@ -1,0 +1,25 @@
+#emojiMe {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.hero {
+  background-color: #47382f;
+}
+.hero-body > .container > .title,
+.hero-body > .container > .subtitle {
+  color: #f7e9d7 !important;
+}
+
+.active-item {
+  color: #f48eb8;
+}
+
+.hero-head {
+  border-bottom: 1px solid #322822;
+}
+
+.navbar-burger {
+  color: #f7e9d7;
+  font
+}

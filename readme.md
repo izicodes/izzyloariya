@@ -23,7 +23,7 @@
 - CSS3
 - JavaScript
 - jQuery
-- Bootstrap
+- Bulma
 
 ## Contact
 

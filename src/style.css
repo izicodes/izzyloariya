@@ -12,7 +12,9 @@ body {
   background-color: #47382f;
 }
 .hero-body > .container > .title,
-.hero-body > .container > .subtitle {
+.hero-body > .container > .subtitle,
+#title,
+.navbar-burger {
   color: #f7e9d7 !important;
 }
 #emojiMe {
@@ -21,7 +23,7 @@ body {
 }
 .active-item,
 #go-down-button {
-  color: #f48eb8 !important;
+  color: #ff7cb3 !important;
 }
 .social-links > a {
   margin: 0 7px;
@@ -31,7 +33,6 @@ body {
   width: 25px !important;
 }
 #title {
-  color: #f7e9d7;
   font-weight: bold;
   font-family: "Delicious Handrawn", cursive;
   font-size: 1.5rem;
@@ -53,11 +54,10 @@ body {
 
 /* NAV BAR */
 .navbar {
-  border-bottom: 1px solid #322822;
+  /* border-bottom: 1px solid #322822; */
   background-color: #47382f !important;
 }
 .navbar-burger {
-  color: #f7e9d7;
   font-weight: bold;
 }
 .navbar-end > a {
@@ -66,4 +66,11 @@ body {
 }
 .dot {
   padding: 0 5px;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: #47382f;
+  color: #f7e9d7;
+  font-size: 0.8rem;
 }

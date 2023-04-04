@@ -1,10 +1,23 @@
+/* 
+>> NOTES/CREDITS 
+- Cursors from 1davi on Deviantart - https://www.deviantart.com/1davi/art/White-Cursor-382757360
+- 
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Varela+Round&display=swap");
 
 body {
   font-family: "Varela Round", sans-serif;
   background-color: #f7e9d7;
-  cursor: url(../images/cursors/Normal.cur), auto !important;
+  cursor: url(../images/Cursors/Cursor.cur), auto !important;
   scroll-behavior: smooth;
+}
+
+/* HOVER */
+#go-down-button:hover,
+a:hover,
+#title:hover {
+  cursor: url(../images/Cursors/Link.cur), auto !important;
 }
 
 /* HERO SECTION */
@@ -46,7 +59,6 @@ body {
 }
 #go-down-button:hover {
   transform: translateY(10px) !important;
-  cursor: pointer;
 }
 #new-section {
   background-color: #f7e9d7 !important;

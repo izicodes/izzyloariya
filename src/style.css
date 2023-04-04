@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Varela+Round&display=swap");
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #f7e9d7;
+}
 #emojiMe {
   width: 120px;
   margin-bottom: 20px;
@@ -11,12 +17,18 @@
   color: #f7e9d7 !important;
 }
 
-.active-item {
-  color: #f48eb8;
+.active-item,
+.fa-angles-down {
+  color: #f48eb8 !important;
 }
 
-.hero-head {
+.navbar {
   border-bottom: 1px solid #322822;
+  background-color: #47382f !important;
+}
+
+#new-section {
+  background-color: #f7e9d7 !important;
 }
 
 .navbar-burger {
@@ -31,4 +43,36 @@
 .social-links > a > svg {
   fill: #f7e9d7 !important;
   width: 25px !important;
+}
+
+#title {
+  color: #f7e9d7;
+  font-weight: bold;
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.fa-angles-down {
+  font-size: 30px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-angles-down:hover {
+  transform: translateY(5px);
+}
+
+.navbar-end > a {
+  color: #f7e9d7;
+  font-weight: bold;
+}
+
+.dot {
+  padding: 0 5px;
+}
+
+.custom-hero {
+  min-height: 100vh !important;
 }

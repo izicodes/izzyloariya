@@ -44,6 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.requestAnimationFrame(step);
   }
 
-  const button = document.querySelector(".fa-angles-down");
+  const button = document.querySelector("#go-down-button");
   button.addEventListener("click", smoothScroll);
 });

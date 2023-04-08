@@ -1,88 +1,137 @@
-/* 
->> NOTES/CREDITS 
-- Cursors from 1davi on Deviantart - https://www.deviantart.com/1davi/art/White-Cursor-382757360
-- 
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Share+Tech+Mono&display=swap");
 
-body {
+:root {
+  --light-red: #f79d84;
+  --deep-red: #ee6352;
+  --white: white;
+  --black-red: #4e3748;
+  --black-blue: #332e46;
+  --black: #1c1c1c;
+  --yellow: #fac05e;
+  --purple: #996cdd;
+  --blue: #3fa7d6;
+  --green: #59cd90;
+
+  /* night mode */
+  --night-light-red: #c96e5c;
+  --night-white: #dcdcdc;
+  --night-black-red: #2d1e2f;
+  --night-black-blue: #1f1a2d;
+  --night-background-color: #1c1f1e;
+  --night-deep-purple: #b2433f;
+}
+
+.down-icon:hover,
+.toggle-box,
+.toggler-icon:hover {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
   font-family: "Varela Round", sans-serif;
-  background-color: #f7e9d7;
-  cursor: url(../images/Cursors/Cursor.cur), auto !important;
-  scroll-behavior: smooth;
 }
-
-/* HOVER */
-#go-down-button:hover,
-a:hover,
-#title:hover {
-  cursor: url(../images/Cursors/Link.cur), auto !important;
+body {
+  margin: 0;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #fdfcdc;
 }
-
-/* HERO SECTION */
-.hero {
-  background-color: #47382f;
-}
-.hero-body > .container > .title,
-.hero-body > .container > .subtitle,
-#title,
-.navbar-burger {
-  color: #f7e9d7 !important;
-}
-#emojiMe {
-  width: 120px;
-  margin-bottom: 20px;
-}
-.active-item,
-#go-down-button {
-  color: #ff7cb3 !important;
-}
-.social-links > a {
-  margin: 0 7px;
-}
-.social-links > a > svg {
-  fill: #f7e9d7 !important;
-  width: 25px !important;
-}
-#title {
-  font-weight: bold;
-  font-family: "Delicious Handrawn", cursive;
-  font-size: 1.5rem;
+section {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+/* >> THE HERO SECTION << */
+.hero {
+  justify-content: center;
   align-items: center;
 }
-#go-down-button {
-  font-size: 30px;
-  margin-top: 20px;
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech Mono", monospace;
+}
+
+/* >> THE BOXES << */
+.box {
+  border: 4px solid #1c1c1c;
+  box-shadow: 7px 7px var(--black-blue);
+  transition: all 0.1s ease-in-out;
+}
+.box:hover {
+  box-shadow: 5px 5px var(--black-blue);
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+.toggle-box {
+  border: 3px solid #1c1c1c;
+  box-shadow: 5px 5px var(--black-blue);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+.toggle-box:hover {
+  box-shadow: 3px 3px var(--black-blue);
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+
+.thick-box {
+  padding: 20px;
+  border-radius: 20px;
+}
+.thin-box {
+  padding: 13px;
+  border-radius: 13px;
+}
+
+/* COLOURS */
+.red {
+  background-color: var(--light-red);
+}
+.white {
+  background-color: var(--white);
+}
+
+/* BUTTONS  */
+.btn {
+  padding: 5px 10px;
+}
+.rounded {
+  border-radius: 50px;
+}
+
+/* ICONS */
+#down-icon-box {
+  margin-top: 50px;
+}
+.down-icon {
+  width: 3rem;
+  height: 3rem;
+  color: black;
   transition: all 0.3s ease-in-out;
 }
-#go-down-button:hover {
-  transform: translateY(10px) !important;
+.down-icon:hover {
+  transform: translateY(10px);
 }
-#new-section {
-  background-color: #f7e9d7 !important;
+.toggler-icon {
+  margin: 4px 3px 0;
+  width: 1.5rem;
+  height: 1.5rem;
 }
-
-/* NAV BAR */
-.navbar {
-  /* border-bottom: 1px solid #322822; */
-  background-color: #47382f !important;
+.yellow-icon {
+  color: rgb(231, 189, 1);
 }
-.navbar-burger {
-  font-weight: bold;
+.white-icon {
+  color: white;
 }
-.navbar-end > a {
-  color: #f7e9d7;
-  font-weight: bold;
-}
-.dot {
-  padding: 0 5px;
-}
-
-.footer {
-  padding: 1rem;
-  background-color: #47382f;
-  color: #f7e9d7;
-  font-size: 0.8rem;
+/* IMAGES */
+span > img {
+  width: 30px;
 }

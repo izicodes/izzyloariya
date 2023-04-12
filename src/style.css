@@ -13,22 +13,9 @@
   --purple: #996cdd;
   --blue: #3fa7d6;
   --green: #59cd90;
-
-  /* night mode */
-  --night-light-red: #c96e5c;
-  --night-white: #dcdcdc;
-  --night-black-red: #2d1e2f;
-  --night-black-blue: #1f1a2d;
-  --night-background-color: #1c1f1e;
-  --night-deep-purple: #b2433f;
 }
 
-.down-icon:hover,
-.toggle-box,
-.toggler-icon:hover {
-  cursor: pointer;
-}
-
+/* >> GLOBAL STYLES << */
 * {
   box-sizing: border-box;
   font-family: "Varela Round", sans-serif;
@@ -39,15 +26,24 @@ body {
   background-color: #fdfcdc;
 }
 section {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.down-icon:hover,
+.toggle-box,
+.toggler-icon:hover {
+  cursor: pointer;
+}
+.container-wrapper {
+  height: 100vh;
 }
 
 /* >> THE HERO SECTION << */
 .hero {
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  height: 100vh;
 }
 h1,
 h2 {
@@ -56,6 +52,16 @@ h2 {
   font-family: "Share Tech Mono", monospace;
   text-align: center;
 }
+.social-container > a {
+  margin: 0 7px;
+}
+.social-container > a > svg {
+  transition: all 0.4s ease-in-out;
+}
+
+.social-container > a > svg:hover {
+  fill: #a2d2ff;
+}
 
 /* >> THE TOPIC SECTIONS << */
 .topic-sec {
@@ -63,7 +69,14 @@ h2 {
   width: 80%;
 }
 .section-wrapper {
-  padding-top: 30px;
+  margin-top: 70px;
+}
+#me-image {
+  border: 5px solid #1c1c1c;
+  border-radius: 620px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 /* >> THE BOXES << */
@@ -168,4 +181,9 @@ nav {
 /* IMAGES */
 span > img {
   width: 30px;
+}
+
+/* >> EXTRAS << */
+.hidden {
+  display: "none";
 }

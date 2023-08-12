@@ -17,14 +17,6 @@
 - Blog page where I share my progress in web development and showcase my writing
   skills.
 
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- jQuery
-- Bulma
-
 ## Contact
 
 If you have any questions or feedback about this project, please feel free to

@@ -1,0 +1,875 @@
+/* Styles for mobile devices */
+
+@media (max-width: 767px) {
+  header,
+  #About-Me,
+  #Portfolio,
+  #Skills,
+  #Resume {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  /* NAVIGATION */
+  .nav-links {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    flex-direction: column !important;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    top: 50px;
+    background-color: #fdd8dfc8;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 0;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  #nav-menu {
+    display: block;
+    font-size: 25px;
+    color: var(--main-pink);
+    cursor: pointer;
+    transition: 650ms ease;
+    width: 12%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 50%;
+  }
+
+  #nav-menu:hover {
+    color: var(--complementary-pink);
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding-top: 70%;
+    height: calc(70vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading-text p {
+    font-size: 190%;
+  }
+
+  .heading-text h1 {
+    font-size: 350%;
+  }
+
+  #symbol {
+    font-size: 40%;
+    margin-left: -10px;
+  }
+
+  #logo-image {
+    width: 12%;
+  }
+
+  #flower-graphic {
+    top: 300px;
+    opacity: 0.2;
+    width: 100%;
+  }
+
+  .CTA-btn {
+    width: 200px !important;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  /* ABOUT SECTION */
+  .about-me-wrapper {
+    display: flex;
+
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #About-Me {
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #About-Me article {
+    width: 100%;
+    padding-top: 50px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #About-Me p,
+  .project-desc {
+    font-size: 1rem;
+    line-height: 2em;
+  }
+
+  .about-me-wrapper figure {
+    text-align: center;
+  }
+
+  #profile-image {
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 5px solid #fff;
+  }
+
+  #profile-image:hover {
+    box-shadow: 10px 10px 0 0 var(--main-pink);
+  }
+
+  .goToResume {
+    width: 145px !important;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* PORTFOLIO SECTION */
+  #Portfolio {
+    margin-top: 200px;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "projectImage"
+      "projectDetails";
+    align-items: center;
+    width: 100%;
+    row-gap: 50px;
+  }
+
+  .project-container img {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 5px solid #fff;
+  }
+
+  .project-image-container-right {
+    text-align: center;
+  }
+  .project-image-container-left {
+    text-align: center;
+  }
+
+  .project-image {
+    grid-area: projectImage;
+    text-align: center !important;
+  }
+  .project-details {
+    grid-area: projectDetails;
+  }
+
+  #top-section-portfolio {
+    margin-bottom: 100px;
+  }
+
+  #projects-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .project-desc {
+    margin-bottom: 20px;
+  }
+
+  .linkToProject:hover::after,
+  .linkToProject:active::after {
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    background-color: var(--main-pink);
+    transition: none;
+  }
+
+  .viewAllBtn {
+    font-size: 1.2rem;
+    margin-top: -60px !important;
+    padding: 17px 45px !important;
+  }
+
+  /* SKILLS */
+  #Skills,
+  #Resume {
+    margin-top: 200px;
+  }
+  #Skills .container {
+    gap: 0;
+  }
+
+  .skills-type-list {
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 90px);
+    column-gap: 1.5rem;
+    row-gap: 5rem;
+  }
+  .logo-icons {
+    width: 60% !important;
+  }
+
+  .type-box p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* RESUME */
+  #resume-heading {
+    margin-bottom: 30px;
+  }
+
+  .resume-desc {
+    line-height: 1.9em;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  #resume-btns {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumeBtn {
+    font-size: 1rem;
+  }
+
+  /* CONTACT */
+  #Contact {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 20px 0px;
+    margin-top: 200px;
+  }
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    gap: 1.5rem;
+  }
+
+  .contact-wrapper a {
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 10px 35px;
+  }
+
+  footer span {
+    font-size: 0.75rem;
+    width: 65%;
+  }
+}
+
+@media (max-width: 390px) {
+  .heading-text h1 {
+    font-size: 250%;
+  }
+
+  .contact-wrapper a {
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 10px 35px;
+  }
+
+  footer span {
+    font-size: 0.7rem;
+    width: 60%;
+  }
+
+  /* MISCS */
+  .active-link,
+  .nav-links a:hover,
+  .nav-links a:active,
+  .CTA-btn,
+  .goToResume:hover,
+  .goToResume:active,
+  #sendBtn:hover,
+  #sendBtn:active,
+  .viewAllBtn,
+  .resumeBtn {
+    color: var(--white) !important;
+    background: rgb(255, 105, 180);
+    background: -moz-linear-gradient(var(--gradient));
+    background: -webkit-linear-gradient(var(--gradient));
+    background: linear-gradient(var(--gradient));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff69b4",endColorstr="#ffc0cb",GradientType=1);
+  }
+
+  .active-link:hover,
+  .active-link:active,
+  .nav-links a:hover,
+  .nav-links a:active,
+  .CTA-btn:hover,
+  .CTA-btn:active,
+  .viewAllBtn:hover,
+  .viewAllBtn:active,
+  .resumeBtn:hover,
+  .resumeBtn:active {
+    transform: scale(1.1);
+  }
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header,
+  #About-Me,
+  #Portfolio,
+  #Skills,
+  #Resume {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+
+  /* NAVIGATION */
+  .nav-links {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    flex-direction: column !important;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    top: 65px;
+    background-color: #fdd8dfc8;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 0;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  #nav-menu {
+    display: block;
+    font-size: 35px;
+    color: var(--main-pink);
+    cursor: pointer;
+    transition: 650ms ease;
+    width: 12%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 50%;
+  }
+
+  #nav-menu:hover {
+    color: var(--complementary-pink);
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding-top: 45%;
+    height: calc(70vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading-text p {
+    font-size: 290%;
+  }
+
+  .heading-text h1 {
+    font-size: 450%;
+  }
+
+  #symbol {
+    font-size: 40%;
+    margin-left: -10px;
+  }
+
+  #logo-image {
+    width: 12%;
+  }
+
+  #flower-graphic {
+    top: 200px;
+    opacity: 0.2;
+    width: 80%;
+  }
+
+  .CTA-btn {
+    width: 250px !important;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  /* ABOUT SECTION */
+  .about-me-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #About-Me {
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #About-Me article {
+    width: 100%;
+    padding-top: 50px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #About-Me p,
+  .project-desc {
+    font-size: 1.2rem;
+    line-height: 2em;
+  }
+
+  .about-me-wrapper figure {
+    text-align: center;
+  }
+
+  #profile-image {
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 5px solid #fff;
+  }
+
+  #profile-image:hover,
+  #profile-image:active {
+    box-shadow: 10px 10px 0 0 var(--main-pink);
+  }
+
+  .goToResume {
+    width: 145px !important;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* PORTFOLIO SECTION */
+  #Portfolio {
+    margin-top: 100px;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "projectImage"
+      "projectDetails";
+    align-items: center;
+    width: 100%;
+    row-gap: 50px;
+  }
+
+  .project-container img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 5px solid #fff;
+  }
+
+  .project-image-container-right {
+    text-align: center;
+  }
+  .project-image-container-left {
+    text-align: center;
+  }
+
+  .project-image {
+    grid-area: projectImage;
+    text-align: center !important;
+  }
+  .project-details {
+    grid-area: projectDetails;
+    text-justify: newspaper;
+  }
+
+  #top-section-portfolio {
+    margin-bottom: 100px;
+  }
+
+  #projects-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .project-desc {
+    margin-bottom: 20px;
+  }
+
+  .linkToProject:hover::after,
+  .linkToProject:active::after {
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    background-color: var(--main-pink);
+    transition: none;
+  }
+
+  .viewAllBtn {
+    font-size: 1.2rem;
+    margin-top: -60px !important;
+    padding: 17px 45px !important;
+  }
+
+  /* SKILLS */
+  #Skills,
+  #Resume {
+    margin-top: 200px;
+  }
+  #Skills .container {
+    gap: 0;
+  }
+
+  .skills-type-list {
+    grid-template-rows: none;
+    grid-template-columns: repeat(4, 110px);
+    column-gap: 2.5rem;
+    row-gap: 5rem;
+  }
+  .logo-icons {
+    width: 70% !important;
+  }
+
+  .type-box p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* RESUME */
+  #resume-heading {
+    margin-bottom: 30px;
+  }
+
+  .resume-desc {
+    line-height: 1.9em;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  #resume-btns {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumeBtn {
+    font-size: 1rem;
+  }
+}
+
+/* Styles for small laptops and desktops */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  /* HERO SECTION */
+  .hero {
+    padding-top: 15%;
+    height: calc(70vh);
+  }
+
+  .heading-text p {
+    font-size: 290%;
+  }
+
+  .heading-text h1 {
+    font-size: 500%;
+  }
+
+  #symbol {
+    font-size: 40%;
+    margin-left: -10px;
+  }
+
+  #flower-graphic {
+    top: 200px;
+    width: 40%;
+  }
+
+  .CTA-btn {
+    width: 250px !important;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  /* ABOUT SECTION */
+  .about-me-wrapper {
+    display: flex;
+    width: 90%;
+    gap: 85px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #About-Me article {
+    width: 90%;
+    padding-top: 50px;
+    line-height: 1.9em;
+  }
+
+  #About-Me {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #About-Me h2 {
+    margin-bottom: 20px;
+  }
+
+  #About-Me p {
+    font-size: 1.1rem;
+  }
+
+  #profile-image {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 15px 15px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 10px solid #fff;
+  }
+
+  #profile-image:hover {
+    box-shadow: 15px 15px 0 0 var(--main-pink);
+  }
+
+  .goToResume {
+    background: var(--white);
+    border: 2px solid var(--main-pink);
+    width: 180px !important;
+    font-size: 1.4rem;
+    margin-top: 50px;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  /* PROJECTS SECTION */
+  #Portfolio {
+    margin-top: 180px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "projectImage"
+      "projectDetails";
+    align-items: center;
+    width: 100%;
+    row-gap: 50px;
+  }
+
+  .project-container img {
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 5px solid #fff;
+  }
+
+  .project-image-container-right {
+    text-align: center;
+  }
+  .project-image-container-left {
+    text-align: center;
+  }
+
+  .project-image {
+    grid-area: projectImage;
+    text-align: center !important;
+  }
+  .project-details {
+    grid-area: projectDetails;
+    text-justify: newspaper;
+    padding: 0 60px;
+    margin-top: 20px;
+  }
+
+  #top-section-portfolio {
+    margin-bottom: 100px;
+  }
+
+  #projects-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .project-desc {
+    margin-bottom: 20px;
+  }
+
+  /* SKILLS */
+
+  #Skills,
+  #Resume {
+    margin-top: 250px;
+  }
+
+  #Skills .container {
+    gap: 0;
+  }
+
+  .skills-type-list {
+    grid-template-rows: none;
+    grid-template-columns: repeat(4, 130px);
+    column-gap: 5.5rem;
+    row-gap: 5rem;
+  }
+
+  .logo-icons {
+    width: 70% !important;
+  }
+
+  .type-box p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Styles for large laptops and desktops */
+@media (min-width: 1366px) and (max-width: 1919px) {
+  /* HERO SECTION */
+  .hero {
+    padding-top: 15%;
+    height: calc(70vh);
+  }
+
+  .heading-text p {
+    font-size: 290%;
+  }
+
+  .heading-text h1 {
+    font-size: 630%;
+  }
+
+  #symbol {
+    font-size: 30%;
+    margin-left: -25px;
+  }
+
+  #flower-graphic {
+    top: 150px;
+    width: 40%;
+  }
+
+  .CTA-btn {
+    width: 250px !important;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  /* ABOUT SECTION */
+  .about-me-wrapper {
+    display: flex;
+    width: 80%;
+    gap: 85px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #About-Me article {
+    width: 90%;
+    padding-top: 50px;
+    line-height: 1.9em;
+  }
+
+  #About-Me {
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #About-Me h2 {
+    margin-bottom: 20px;
+  }
+
+  #About-Me p {
+    font-size: 1.1rem;
+  }
+
+  #profile-image {
+    width: 95%;
+    border-radius: 25px;
+    box-shadow: 15px 15px 0 0 var(--complementary-pink);
+    transition: 650ms ease;
+    border: 10px solid #fff;
+  }
+
+  #profile-image:hover {
+    box-shadow: 15px 15px 0 0 var(--main-pink);
+  }
+
+  .goToResume {
+    background: var(--white);
+    border: 2px solid var(--main-pink);
+    width: 180px !important;
+    font-size: 1.4rem;
+    margin-top: 40px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  #Skills, #Resume {
+    margin-top: 250px;
+  }
+}
+
+/* Styles for extra large laptops and desktops */
+@media (min-width: 1920px) {
+}
